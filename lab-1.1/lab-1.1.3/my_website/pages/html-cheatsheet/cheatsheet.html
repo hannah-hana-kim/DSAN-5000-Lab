@@ -1,0 +1,184 @@
+ <!-- SOURCE: MODIFIED FROM https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet -->
+
+<!-- DOCTYPE:  instruction to the browser about what type of document to expect and which 
+	version of HTML (HyperText Markup Language) is being used, in this case it’s HTML5. -->
+
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML is organized into a family tree structure. HTML elements can have 
+		parents, grandparents, siblings, children, grandchildren, etc. -->
+
+
+	<!-- The <head> element contains general information about an HTML page that isn’t 
+		displayed on the page itself. This information is called metadata and includes 
+		things like the title of the HTML document and links to stylesheets. -->
+
+	<head>
+		<title>HTML Cheatsheet - Hannah Kim</title>
+	</head>
+
+
+	<!-- The <body> element represents the content of an HTML document. 
+		Content inside <body> tags are rendered on the web browsers. 
+			Note: There can be only one <body> element in a document. -->
+
+	<body>
+		<!-- The <div> element is used as a container that divides an HTML
+			 document into sections and is short for “division”. <div> elements
+		     can contain flow content such as headings, paragraphs, links, images, etc -->
+
+	  <div id="id-of-element-to-link-to">
+	  	<!-- HTML can use six different levels of heading elements. The heading elements
+			are ordered from the highest level <h1> to the lowest level <h6>. -->
+
+	  	<!-- ID: specific and unique id attributes can be assigned to different elements in 
+			order to differentiate between them. should begin with a letter and should only 
+			contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.). -->
+	    <h1  id="C1">CHAPTER-1:</h1>
+
+
+	    <!-- HTML attributes are values added to the opening tag of an element to configure the
+			 element or change the element’s default behavior. -->
+		<p id="my-paragraph" style="color: skyblue;">Here’s some text for a paragraph that is being altered by HTML attributes</p>
+
+		 
+		<!-- The whitespace created by this line, and above/below this line is ignored by the browser-->
+		 
+		<!-- The <p> paragraph element contains and displays a block of text. -->
+		<p>Another test paragraph, this will sit right under the first paragraph, no extra space between. <br> newline example</p>
+
+		<!-- The <br> line break element will create a line break in text -->
+
+		A line break haiku.<br>
+		Poems are a great use case.<br>
+		Oh joy! A line break.<br>
+		salto de línea
+
+		<!-- The <span> element is an inline container for text and can be used to
+			 group text for styling purposes. -->
+		<p><span>This text</span> may be styled differently than the surrounding text.</p>
+
+	    <h2>Section-1.1:</h2>
+
+	    <!-- The <em> emphasis element emphasizes text and browsers will usually
+			 italicize the emphasized text by default. -->
+		<p>This <em>word</em> will be emphasized in italics.</p>
+
+		<!-- The <strong> element highlights important, serious, or urgent text and browsers
+			 will normally render this highlighted text in bold by default. -->
+		<p>Here is a little information about <strong>me</strong>!</p>
+
+
+		<!-- The <ol> ordered list element creates a list of items in sequential order. 
+			Each list item appears numbered by default -->.
+		<ol>
+		  <li>I am from Seoul, South Korea</li>
+		  <li>Cat person</li>
+		  <li>love chocolate chip cookies</li>
+		</ol>
+		 
+		<!-- The <ul> unordered list element is used to create a list of items in no particular
+			 order. Each individual list item will have a bullet point by default. -->
+		
+		<h4 style="color:chocolate">How to make Chocolate Chip Cookies</h4>
+		<p>Ingredients</p>
+		<ul> 
+		  <li>Butter</li>
+		  <li>Eggs</li>
+		  <li>Sugar</li>
+		  <li>Vanilla Extract</li>
+		  <li>Baking Soda</li>
+		  <li>Water</li>
+		  <li>Salt</li>
+		  <li>Flour</li>
+		  <li>Chocolate Chips</li>
+		  <li>Nuts (optional)</li>
+		</ul>
+
+		<p>Easy Recipe</p>
+		<p id="cookie_recipe">You’re going to start by melting the <span class="ingredients" style="color: chocolate">butter</span>. The butter shouldn’t be sizzling hot. If it is about 90% melted, and then you’ll whisk it until it finishes melting.<br>
+			Once the butter has melted, whisk in the <span class="ingredients" style="color: chocolate">sugar</span> until well-combined. Mix in the <span class="ingredients" style="color: chocolate">vanilla extract</span> and <span class="ingredients" style="color: chocolate">egg</span>.<br>
+			Add the <span class="ingredients" style="color: chocolate">flour</span>, <span class="ingredients" style="color: chocolate">baking soda</span>, and <span class="ingredients" style="color: chocolate">salt</span>. Stir in just until combined. Stir in the <span class="ingredients" style="color: chocolate">chocolate chips</span>, and then scoop the <span class="ingredients" style="color: chocolate">dough</span>. <br>
+			Place about 2 inches apart on the prepared baking sheet. Bake until the cookies are set on the edges but slightly underdone in the middle, about 7-10 minutes. <br>
+			Slightly under-baking the cookies helps to keep them soft. Since oven temperatures can vary, you may find that you need to adjust the baking times.
+		</p>
+
+	   	<h3>Section-1.1.1:</h3>
+
+
+		<!-- including my photo to this file using a relative path.
+			The source "../../images/photo.png" also works, since "../" means the upper level folder. -->
+		<img src="../../../my_website/images/photo.png" alt="Hannah Kim" style="width:300px;height:400px;"><br>
+   
+		<img src="../../images/pepper.png" alt="My Cat Pepper" style="width:300px;height:400px;"><br>
+		
+	   <video width="320" height="240" controls muted>
+		<source src="../../images/pepper_3.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<br>
+
+		<p></p>
+		<!-- The target attribute on an <a> anchor element specifies where a hyperlink should be opened. -->
+		<a href="https://www.linkedin.com/in/hannahhanakim/" target="_blank">Check out my LinkedIn</a><br>
+
+			<!-- The <a> anchor element is used to create hyperlinks in an HTML document. 
+			The hyperlinks can point to other webpages, files on the same server, a
+			 location on the same page, or any other URL via the hyperlink reference 
+			 attribute, href. The href determines the location the anchor element points to. -->
+
+		<!-- Creating text links -->
+		<a href="http://www.w3schools.com">W3Schools</a><br>
+		<!-- https://www.w3schools.com/html/html5_video.asp -->
+
+	  </div>
+
+	
+	  <div>
+	  <h1>Chapter-2</h1>
+	  <p>Here’s some text</p>
+
+
+
+	<!-- The anchor element <a> can create hyperlinks to different parts of the same HTML 
+		document using the href attribute to point to the desired location with # followed 
+		by the id of the element to link to. -->
+	 
+	<a href="#cookie_recipe">Check out how to make cookies easily!</a>
+
+
+	<!-- the following shows and example of a html table -->
+	<p>Table example:</p>	
+	<table>
+
+	 <!-- tables column headers -->
+	 <thead>
+	   <tr>
+	     <th>Bolded header 1</th>
+	     <th>Bolded header 2</th>
+	   </tr>
+	 </thead>
+
+	 <!-- tables entries -->
+	 <tbody>
+	   <tr>
+	     <td>table content: row-1 col-1</td>
+	     <td>table content: row-1 col-2</td>
+	   </tr>
+	   <tr>
+		<td>table content: row-2 col-1</td>
+		<td>table content: row-2 col-2</td>
+	  </tr
+	 </tbody>
+	</table>
+
+	</div>
+
+
+	</body>
+
+
+
+</html>
+

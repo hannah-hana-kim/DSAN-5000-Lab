@@ -1,0 +1,13 @@
+# HTML and CSS
+Basics demonstrations
+
+## Demonstration-1: HTML cheat-sheet
+
+* [Click here](html-cheatsheet.zip) to download a folder with an HTML "cheat-sheet", the file contains examples of most of the fundamental HTML constructs
+  ![](images/2023-02-11-13-35-02.png){width=700}
+* We will not cover `.html` further, because it is fairly self-explanatory, similar to `.md`  
+
+## Demonstration-2: A simple website {.smaller}
+
+* [Click here](website-template.zip) to download a folder with a simple HTML website "from scratch" (i.e. no quarto)
+  ![](images/2023-08-27-18-42-19.png){width=900}

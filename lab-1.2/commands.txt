@@ -1,0 +1,81 @@
+###### NOTE FOR GRADING #################
+
+Dear whom it may be concerned, 
+
+1. I misunderstood the word 'Record the commands and command output', so I used a command prompt: 'script' command, but Professor Hickman advised me to use the command 'history' and copy it to the text file, then submit it. So for Component 3, I used the command 'script' and for Component 8 and 9, I used the command 'script,' and combined to this one text fil: commands.txt.
+
+2. Since I separated the terminals a lot and also combining all the command history in one file, I thought it might be confusing. So I put a note above the command lines for you to understand it better. Please refer to the notes that is in multiple '#'s. 
+
+##########################################
+
+
+############# Component_2 ################
+(base) hannahkim@Hannahui-MacBookPro 5000-lab-1.2 % cd ~/
+(base) hannahkim@Hannahui-MacBookPro ~ % git clone https://github.com/hannah-hana-kim/5000-lab-1.2.git
+Cloning into '5000-lab-1.2'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+(base) hannahkim@Hannahui-MacBookPro ~ % ls
+5000-lab-1.2                    MATLAB                          Tutorial08.R                    latex2e
+Applications                    Movies                          Tutorial09.R                    matlab_crash_dump.81361-1
+Desktop                         Music                           Tutorial10.R                    opt
+Documents                       MyFirstRScript.R                assignment1                     python
+Downloads                       Pictures                        assignment1.cpp                 seaborn-data
+GitHub                          Public                          eclipse                         venv
+Library                         RTutorial                       eclipse-workspace
+(base) hannahkim@Hannahui-MacBookPro ~ % 
+###########################################
+
+
+########### Component_3 ###################
+  480  open ./
+  481  ls
+  482  pwd
+  483  ls
+  484  cd ../
+  485  ls
+  486  cd simple_quarto_website
+  487  ls
+  488  pwd
+  489  touch reference.bib
+  490  code reference.bib
+  491  code reference.bib
+  492  ls
+  493  rm style.css
+  494  nano _quarto.yml
+  495  mkdir images
+  496  mkdir slides
+  497  quarto convert about.qmd
+  498  rm about.qmd
+  499  ls
+  500  more reference.bib
+  501  nano _quarto.yml
+  502  quarto preview
+  503  history\n
+  504  script commands_1.txt
+###########################################
+
+
+
+########### Component_8_9 #################
+(base) hannahkim@Hannahui-MacBookPro simple_quarto_website % history
+  501  git push
+  502  history
+  503  open _site/index.html
+  504  ls
+  505  ls
+  506  rm _site
+  507  ls
+  508  rm -r _site
+  509  ls
+  510  quarto render
+  511  open _site/index.html
+  512  git add ./
+  513  git commit -m "added a website with quarto and jupyter notebook file."
+  514  git push
+  515  rsync -alvr --delete _site/* hannahki@gtown3.reclaimhosting.com:/home/hannahki/public_html/_site
+  516  rsync -alvr --delete _site/* hannahki@gtown3.reclaimhosting.com:/home/hannahki/public_html/_site
+#############################################
