@@ -374,11 +374,5 @@ plot(lm_model)
 library(rpart.plot)
 ```
 
-```{r}
-dt_model <- rpart(data = train2, method = 'class')
-rpart.plot(dt_model, box.palette = 'blue')
-```
-
-
 (e) Fit a tree aggregation model, observe the $R^2$ on the test set.
 
